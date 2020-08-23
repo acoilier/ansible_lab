@@ -20,6 +20,11 @@ images server accessible en ssh
 - [acoilier/debian-sshd:9 (Stretch)](https://hub.docker.com/r/acoilier/debian-sshd)
 - [acoilier/debian-sshd:8 (Jessie)](https://hub.docker.com/r/acoilier/debian-sshd)
 
+### Centos
+images server accessible en ssh
+- [acoilier/centos-sshd:8](https://hub.docker.com/r/acoilier/centos-sshd)
+- [acoilier/centos-sshd:7](https://hub.docker.com/r/acoilier/centos-sshd)
+
 ## Informations sur les containeurs sshd
 ### Config
 
