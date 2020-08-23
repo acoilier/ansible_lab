@@ -3,7 +3,7 @@ MAINTAINER Alexandre Coilier "https://github.com/acoilier"
 
 RUN apt-get update
 
-RUN apt-get install -y openssh-server python vim net-tools
+RUN apt-get install -y openssh-server
 RUN mkdir /var/run/sshd
 
 RUN echo 'root:root' |chpasswd
