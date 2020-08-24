@@ -1,0 +1,6 @@
+debian
+ubuntu
+centos
+[all:vars]
+ansible_ssh_user=root
+ansible_ssh_pass=root
