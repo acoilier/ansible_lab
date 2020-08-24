@@ -1,0 +1,22 @@
+version: '3'
+services:
+  master:
+    container_name: master
+    image: acoilier/ubuntu-ansible:latest
+    working_dir: /root/workdir
+    volumes:
+      - ./workdir:/root/workdir
+      - ./config:/etc/ansible
+    command: tail -f /dev/null
+
+  deb:
+    container_name: deb
+    image: acoilier/debian-sshd:latest
+  
+  ubuntu:
+    container_name: ubuntu
+    image: acoilier/ubuntu-sshd:latest
+
+  centos:
+    container_name: centos
+    image: acoilier/centos-sshd:latest
