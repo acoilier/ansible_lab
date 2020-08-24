@@ -10,7 +10,7 @@ services:
     command: tail -f /dev/null
 
   debian:
-    container_name: deb
+    container_name: debian
     image: acoilier/debian-sshd:latest
   
   ubuntu:
