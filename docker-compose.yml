@@ -9,7 +9,7 @@ services:
       - ./config:/etc/ansible
     command: tail -f /dev/null
 
-  deb:
+  debian:
     container_name: deb
     image: acoilier/debian-sshd:latest
   
