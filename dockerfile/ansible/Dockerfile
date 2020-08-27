@@ -18,13 +18,13 @@ RUN apt-get update \
        iproute2 \
        ssh \
        sshpass \
-       curl\
+       curl \
        python3-pip \
        apt-utils \
        iputils-ping \
-       git\
-       vim\
-       nano\
+       git \
+       vim \
+       nano \
     && rm -Rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
     && apt-get clean
