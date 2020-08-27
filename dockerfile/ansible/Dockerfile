@@ -22,6 +22,9 @@ RUN apt-get update \
        python3-pip \
        apt-utils \
        iputils-ping \
+       git\
+       vim\
+       nano\
     && rm -Rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
     && apt-get clean
