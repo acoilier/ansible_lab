@@ -1,9 +1,8 @@
 FROM debian:10
-MAINTAINER Alexandre Coilier "https://github.com/acoilier"
+LABEL maintainer="Alexandre Coilier https://github.com/acoilier"
 
 RUN apt-get update
-
-RUN apt-get install -y openssh-server
+RUN apt-get install -y openssh-server python
 RUN mkdir /var/run/sshd
 
 RUN echo 'root:root' |chpasswd
