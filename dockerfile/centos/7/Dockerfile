@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER Alexandre Coilier "https://github.com/acoilier"
+LABEL maintainer="Alexandre Coilier https://github.com/acoilier"
 
 RUN yum -y update; yum clean all
 RUN yum -y install epel-release; yum clean all

@@ -1,5 +1,4 @@
 FROM ubuntu:20.04
-
 LABEL maintainer="Alexandre Coilier https://github.com/acoilier"
 
 ENV pip_packages "ansible pyopenssl"

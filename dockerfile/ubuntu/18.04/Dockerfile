@@ -1,5 +1,5 @@
 FROM       ubuntu:18.04
-MAINTAINER Aleksandar Diklic "https://github.com/rastasheep"
+LABEL maintainer="Alexandre Coilier https://github.com/acoilier"
 
 RUN apt-get update
 

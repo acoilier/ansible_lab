@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-MAINTAINER Alexandre Coilier "https://github.com/acoilier"
+LABEL maintainer="Alexandre Coilier https://github.com/acoilier"
 
 RUN apt-get update
 
