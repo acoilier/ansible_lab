@@ -1,6 +1,18 @@
 ---
 - hosts: all
-  gather_facts: no
+  gather_facts: yes
   tasks:
-    - name: Test de connexion via Ansible
-      ping:
+    #- debug: Test de connexion via Ansible
+    #    msg:
+    #      - "{{ ansible_distribution_file_variety }}" "{{ ansible_distribution_version }}"
+    #      - "python: {{ discovered_interpreter_python }}"
+    #      - "python version: {{ ansible_python_version }}"
+
+    - name: Informations sur la distribution
+      vars:
+        msg: |
+            {{ ansible_distribution_file_variety }} {{ ansible_distribution_version }}
+            python: {{ discovered_interpreter_python }}
+            python version: {{ ansible_python_version }}
+      debug:
+        msg: "{{ msg.split('\n') }}"
