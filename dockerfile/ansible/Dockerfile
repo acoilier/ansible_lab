@@ -1,9 +1,11 @@
 FROM ubuntu:20.04
 
-MAINTAINER Alexandre Coilier "https://github.com/acoilier"
+LABEL maintainer="Alexandre Coilier https://github.com/acoilier"
 
 ENV pip_packages "ansible pyopenssl"
 
+ENV TZ=Europe/Paris
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
        locales \
