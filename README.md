@@ -2,6 +2,8 @@
 
 Collection d'images docker pour tester ses playbook Ansible.
 
+[Voir le tuto sur le blog](https://www.sysadminascode.com/ansible-labs-et-tests/)
+
 ## Tags des images
 
 ### Master
